@@ -1,0 +1,26 @@
+﻿<Window x:Class="TestTreeViewWithControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:testTreeViewWithControls="clr-namespace:TestTreeViewWithControls"
+        Title="MainWindow" Height="637.25" Width="932"
+        Loaded="MainWindow_OnLoaded">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <!--<TreeView x:Name="ctrlTree" HorizontalAlignment="Left" Height="492" Margin="10,30,0,0" VerticalAlignment="Top" Width="214" SelectedItemChanged="ctrlTree_SelectedItemChanged"/>-->
+    <Menu HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="582" Grid.ColumnSpan="2">
+      <MenuItem Header="File" Click="MenuItem_Click">
+        <MenuItem Header="Open" HorizontalAlignment="Left" Width="145"/>
+      </MenuItem>
+      <MenuItem Header="Options"/>
+    </Menu>
+    <testTreeViewWithControls:TreeViewList Grid.Column="0" Grid.Row="1" Width="200" />
+    <testTreeViewWithControls:DetailsUC Grid.Row="1" Grid.Column="1" />
+  </Grid>
+</Window>
