@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C++ REST", "C++ REST", "{B130C8C2-4C63-414B-A6E9-2F2855BB069A}"
 EndProject
@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestModel", "MockingFramewo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestModel_Tests", "MockingFrameworks\Moq\TestModel_Tests\TestModel_Tests.csproj", "{F4D25E34-B683-49C4-9AE8-35D4F66135B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REST", "REST", "{21BA62ED-AAB5-46AF-8F45-CAE1ACE9286C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebAPI", "REST\TestWebAPI\TestWebAPI.csproj", "{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,13 +41,11 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{31ABB716-A0BC-4538-9271-0CC2A564BC58}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{31ABB716-A0BC-4538-9271-0CC2A564BC58}.Debug|x86.ActiveCfg = Debug|Win32
-		{31ABB716-A0BC-4538-9271-0CC2A564BC58}.Debug|x86.Build.0 = Debug|Win32
 		{31ABB716-A0BC-4538-9271-0CC2A564BC58}.Release|Any CPU.ActiveCfg = Release|Win32
 		{31ABB716-A0BC-4538-9271-0CC2A564BC58}.Release|x86.ActiveCfg = Release|Win32
 		{31ABB716-A0BC-4538-9271-0CC2A564BC58}.Release|x86.Build.0 = Release|Win32
 		{A1AA184B-8BB8-4131-B574-AB465490DA86}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{A1AA184B-8BB8-4131-B574-AB465490DA86}.Debug|x86.ActiveCfg = Debug|Win32
-		{A1AA184B-8BB8-4131-B574-AB465490DA86}.Debug|x86.Build.0 = Debug|Win32
 		{A1AA184B-8BB8-4131-B574-AB465490DA86}.Release|Any CPU.ActiveCfg = Release|Win32
 		{A1AA184B-8BB8-4131-B574-AB465490DA86}.Release|x86.ActiveCfg = Release|Win32
 		{A1AA184B-8BB8-4131-B574-AB465490DA86}.Release|x86.Build.0 = Release|Win32
@@ -95,6 +97,14 @@ Global
 		{F4D25E34-B683-49C4-9AE8-35D4F66135B5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4D25E34-B683-49C4-9AE8-35D4F66135B5}.Release|x86.ActiveCfg = Release|Any CPU
 		{F4D25E34-B683-49C4-9AE8-35D4F66135B5}.Release|x86.Build.0 = Release|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Debug|x86.Build.0 = Debug|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Release|x86.ActiveCfg = Release|Any CPU
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,5 +119,9 @@ Global
 		{ACA76E67-0611-4415-927D-64FFB9C462A5} = {E6DEE03D-AABA-4500-A30D-E54B7E487310}
 		{874139C3-2A59-4978-8332-18B89FD50F06} = {E6DEE03D-AABA-4500-A30D-E54B7E487310}
 		{F4D25E34-B683-49C4-9AE8-35D4F66135B5} = {E6DEE03D-AABA-4500-A30D-E54B7E487310}
+		{036A3EF4-A728-4EBE-91F5-8DDDE13659A9} = {21BA62ED-AAB5-46AF-8F45-CAE1ACE9286C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D66AB904-00A3-481D-AF13-E6A0BEAC7A98}
 	EndGlobalSection
 EndGlobal
